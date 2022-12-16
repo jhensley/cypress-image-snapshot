@@ -1,16 +1,12 @@
 {
-  "name": "@simonsmith/cypress-image-snapshot",
-  "version": "6.0.0",
+  "name": "@jhensley/cypress-image-snapshot",
+  "version": "6.0.1",
   "description": "Cypress bindings for jest-image-snapshot.",
   "repository": "https://github.com/simonsmith/cypress-image-snapshot",
   "author": "Jack Cross <jack@palmer.net>",
-  "contributors": [
-    "Simon Smith <simonsmith@users.noreply.github.com>"
-  ],
+  "contributors": ["Jonathan Hensley <jhensley@users.noreply.github.com>"],
   "license": "MIT",
-  "files": [
-    "*.js"
-  ],
+  "files": ["*.js"],
   "engines": {
     "node": ">=14"
   },
@@ -49,7 +45,7 @@
     "rimraf": "^2.6.2"
   },
   "peerDependencies": {
-    "cypress": "^10.0.0"
+    "cypress": "^10.0.0 || ^11.0.0 || ^12.0.0"
   },
   "husky": {
     "hooks": {
@@ -63,13 +59,8 @@
     "trailingComma": "es5"
   },
   "eslintConfig": {
-    "extends": [
-      "airbnb-base",
-      "prettier"
-    ],
-    "plugins": [
-      "cypress"
-    ],
+    "extends": ["airbnb-base", "prettier"],
+    "plugins": ["cypress"],
     "env": {
       "cypress/globals": true
     }
@@ -85,14 +76,9 @@
         }
       ]
     ],
-    "plugins": [
-      "transform-object-rest-spread"
-    ]
+    "plugins": ["transform-object-rest-spread"]
   },
   "jest": {
-    "testPathIgnorePatterns": [
-      "<rootDir>/examples/",
-      "<rootDir>/node_modules/"
-    ]
+    "testPathIgnorePatterns": ["<rootDir>/examples/", "<rootDir>/node_modules/"]
   }
 }
